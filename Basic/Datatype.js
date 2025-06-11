@@ -29,6 +29,32 @@ let myobj={
     age: 22,
 }
 
-console.log(typeof array);
-console.log(typeof myobj);
-console.log(typeof another);
+// console.log(typeof array);
+// console.log(typeof myobj);
+// console.log(typeof another);
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (non-Primiyive)
+
+let myname="navneet";
+
+let anothername=myname;
+ anothername="kunal";
+
+console.log(myname);
+console.log(anothername);
+
+let userOne={
+    email: "kunal@dotcom",
+    upi: "userib@u"
+
+}
+
+let usertwo=userOne;
+usertwo.email="mohit@.com"
+
+console.log(userOne);
+console.log(usertwo);
+
