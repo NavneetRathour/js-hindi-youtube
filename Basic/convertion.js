@@ -27,3 +27,5 @@ let StringNumber = String(someNumber);
 console.log(typeof StringNumber);
 console.log(StringNumber);
 
+let name= "Navneet";
+
