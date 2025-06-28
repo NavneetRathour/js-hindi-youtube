@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+  const div= document.createElement('div')
+  console.log(div);
+  div.className="main"
+  div.id = Math.round(Math.random() * 10 + 1)
+  div.setAttribute("title","generate title")
+  div.style.backgroundColor = "green"
+  div.style.padding = "15px"           // uper ke sare function div bana kr us pr kam kiya h
+  const text= div.innerText = "welcome to kanpur"    // append me ower write ho jata h
+ // console.log(text);
+ 
+
+//   const addtext = document.createTextNode("chai or code")    // ye best h bhoth are good
+//    div.appendChild(addtext)
+   document.body.appendChild(div)  // ye div ko memery se nikal kr body me yni div ko pej pr dekhna 
+</script>
+</html>

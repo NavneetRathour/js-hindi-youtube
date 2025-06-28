@@ -1,0 +1,20 @@
+
+  div,nav,a {
+    text-decoration: none;
+    text-overflow: none;
+    
+}
+div{
+    background-color: aquamarine;
+     border-color: black;
+    text-align: center;
+    border-radius: 20px;
+   
+}
+a{
+;
+}
+
+h1{
+    color: red;
+}

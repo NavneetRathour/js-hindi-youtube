@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dm</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+<ul class="language">
+    <li>javaScript</li>
+</ul>
+</body>
+<script>
+    function addlanguage (langname) {
+        const li= document.createElement('li');
+        li.innerHTML = `${langname}`
+        document.querySelector('.language').
+        appendChild(li)
+
+    }
+
+     addlanguage("paython");
+     addlanguage("Java")
+
+     function addOptiLang(language) {                   // ye travel nhi krta h 
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('.language').appendChild(li)
+     }
+
+     addOptiLang("golane")
+     addOptiLang("html")
+
+     // Edit
+
+     const secondlang = document.querySelector ("li:nth-child(2)")
+     // secondlang.replaceWith("Css")                               // => simple aproach
+
+     // secondlang.inerHTML= "mojo"                             // => travas krta h 
+    //  const newli = document.createElement('li')       // => pura Element banke change krna
+    //  newli.textContent = "mojo"
+    //  secondlang.replaceWith(newli)             // it is run without trawas
+
+    // edit
+
+    const firstEl = document.querySelector("li:first-child")
+    firstEl.outerHTML = '<li> TypeScript</li>'
+
+    // remove
+    const lastln = document.querySelector('li:last-child')
+    lastln.remove()
+</script>
+</html>
