@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    <h1>chai or javaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+     let sayDate = function (str) {
+       console.log( str ,Date.now());   
+       
+     }
+
+    let st                                   // => scope se bahar variable diclear krne pr hi chalega
+   document.querySelector('#start').
+   addEventListener('click' ,function(){
+   se= setInterval(sayDate,1000,"hi")
+       
+})
+
+ document.querySelector('#stop').
+ addEventListener('click',function(){
+    clearInterval(se)
+   console.log("stop");
+  
+     
+})
+
+</script>
+</html>

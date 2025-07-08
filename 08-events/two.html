@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chi or code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    const seywark = function(){
+  console.log("Navneet")
+    }
+
+    const chaneText = function () {
+        document.querySelector('h1').innerHTML = "Best course"
+    }
+
+    const changeme= setTimeout(chaneText,2000)
+     // setTimeout (seywark, 2000)
+
+     document.querySelector('#stop').
+     addEventListener('click', function(){
+        clearTimeout(changeme)
+        console.log("STOPPED");
+        
+     })
+</script>
+</html>
