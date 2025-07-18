@@ -19,7 +19,7 @@ creatUser.prototype.increment = function(){
 }
 
 creatUser.prototype.printme = function(){
-    console.log(`price is ${this.score}`);
+    console.log(`price is ${this.score}`);               // => this mean es ka 
     
 }
 
